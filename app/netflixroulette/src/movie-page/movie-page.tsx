@@ -12,7 +12,7 @@ export const MoviePage =()=>{
 
         const getMovie = async ()=>{
 
-            const response =await fetch("http://localhost:3001/movies");
+            const response =await fetch("http://localhost:3000/movies");
             const movieJson = await response.json();
             setMovie(movieJson.data.map((movie: any)=>({
                 ...movie,
